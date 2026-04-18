@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smart Queue</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Smart Queue System</h1>
+
+<div class="controls">
+    <input id="name" placeholder="Enter Name">
+    <button onclick="addTicket()">Add</button>
+    <button onclick="removeTicket()">Serve</button>
+    <button onclick="clearQueue()">Clear</button>
+</div>
+
+<h3>Queue List</h3>
+<ul id="queueList"></ul>
+
+<h3>Analytics</h3>
+<p id="stats"></p>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+<script src="supabase.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
